@@ -11,7 +11,7 @@ class Solution(object):
             if node is None:
                 return None
             values.append(node.val)
-            self.DFS(node.left)
-            self.DFS(node.right)
+            DFS(node.left)
+            DFS(node.right)
         DFS(root)
         return values
