@@ -6,21 +6,14 @@ class TreeNode(object):
 
 class Solution(object):
     def isValidBST(self, root):
-        def goRight(root, minValue, maxValue):
+        def go(root, minValue, maxValue):
             if not root:
                 return True
             if root.val <= minValue or root.val >= maxValue:
                 return False
-            return goRight(root.right, root.val, maxValue) and goLeft(root.left, minValue, root.val)
+            return go(root.right, root.val, maxValue) and go(root.left, minValue, root.val)
 
-        def goLeft(root, minValue, maxValue):
-            if not root:
-                return True
-            if root.val <= minValue or root.val >= maxValue:
-                return False
-            return goRight(root.right, root.val, maxValue) and goLeft(root.left, minValue, root.val)
-
-        return goRight(root.right, root.val, float('inf')) and goLeft(root.left, float('-inf'), root.val)
+        return go(root.right, root.val, float('inf')) and go(root.left, float('-inf'), root.val)
 
 
 node1 = TreeNode(2)
