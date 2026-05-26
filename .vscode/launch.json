@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/AMD RYZEN 7/OneDrive/Documentos/C-FundamentosProgra",
-      "program": "c:/Users/AMD RYZEN 7/OneDrive/Documentos/C-FundamentosProgra/build/Debug/outDebug",
+      "cwd": "c:/Users/salaz/OneDrive/Documentos/LeetCode",
+      "program": "c:/Users/salaz/OneDrive/Documentos/LeetCode/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
